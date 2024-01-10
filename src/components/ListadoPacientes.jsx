@@ -9,7 +9,7 @@ function ListadoPacientes({ pacientes, setPaciente, eliminarPaciente }) {
         <span className="text-indigo-600 font-bold ">Pacientes y Citas</span>
       </p>
 
-      {pacientes && pacientes.length ? (
+      {pacientes.length > 0 ? (
         <>
           {pacientes.map((paciente) => (
             <Paciente
